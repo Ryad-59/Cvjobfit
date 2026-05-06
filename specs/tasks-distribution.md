@@ -25,14 +25,13 @@
 
 ---
 
-## 👤 Membre 2 - Backend & API (Node.js/Express + PostgreSQL)
+## 👤 Membre 2 - Backend & API (Node.js/Express + MariaDB)
 
 ### Tâches prioritaires
-- [ ] **Setup backend** : Initialiser Express + Prisma + PostgreSQL (local ou Supabase)
-- [ ] **Modèles de données** :
-  - User (id, email, password)
-  - CV (id, userId, content, createdAt)
-  - JobOffer (id, cvId, text, createdAt)
+- [ ] **Setup backend** : Initialiser Express + mysql2 (driver MariaDB) ou Sequelize/TypeORM
+- [ ] **Base de données MariaDB** :
+  - Créer la base `cvjobfit`
+  - Tables : `users` (id, email, password, createdAt), `cvs` (id, userId, content, createdAt), `job_offers` (id, cvId, text, createdAt)
 - [ ] **API Endpoints** :
   - `POST /api/auth/register` et `POST /api/auth/login` (JWT)
   - `POST /api/cv` (créer/modifier CV)
@@ -40,10 +39,11 @@
   - `POST /api/job-offer` (sauvegarder l'offre d'emploi)
 - [ ] **Upload fichier** : Endpoint pour importer CV (PDF/DOCX) - parsing basique
 - [ ] **Sécurité** : Middleware d'authentification JWT
+- [ ] **Connexion DB** : Configurer le pool de connexions MariaDB
 
 ### Livrables
 - API RESTful fonctionnelle
-- Base de données opérationnelle
+- Base de données MariaDB opérationnelle
 - Documentation rapide des endpoints (commentaire dans le code)
 
 ---
