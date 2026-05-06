@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "project_name": "CVJobFit",
+    "version": "1.0.0",
+    "created_date": "2026-05-06",
+    "author": "Product Team",
+    "status": "draft"
+  },
+  "overview": {
+    "summary": "Plateforme web utilisant l'IA pour optimiser et adapter les CV selon les offres d'emploi cibles.",
+    "problem_statement": "Les chercheurs d'emploi perdent du temps à adapter manuellement leurs CV et ne savent pas toujours quels mots-clés ou compétences mettre en avant pour passer les filtres ATS.",
+    "target_users": [
+      "Chercheurs d'emploi actifs",
+      "Étudiants et jeunes diplômés",
+      "Professionnels en reconversion"
+    ]
+  },
+  "goals": [
+    {
+      "id": "G1",
+      "description": "Automatiser l'adaptation du CV aux offres d'emploi",
+      "metric": "Temps moyen de création d'un CV adapté < 5 minutes"
+    },
+    {
+      "id": "G2",
+      "description": "Optimiser le contenu pour les algorithmes ATS",
+      "metric": "Score de matching moyen > 85%"
+    },
+    {
+      "id": "G3",
+      "description": "Fournir des suggestions de rédaction via l'IA",
+      "metric": "Taux d'acceptation des suggestions > 70%"
+    }
+  ],
+  "features": [
+    {
+      "id": "F1",
+      "name": "Gestion de CV de base",
+      "priority": "high",
+      "description": "Création et import de CV",
+      "user_stories": [
+        {
+          "id": "US1.1",
+          "as_a": "chercheur d'emploi",
+          "i_want_to": "créer un CV from scratch via un éditeur WYSIWYG",
+          "so_that": "j'ai une base solide à optimiser"
+        },
+        {
+          "id": "US1.2",
+          "as_a": "chercheur d'emploi",
+          "i_want_to": "importer mon CV existant (PDF/DOCX)",
+          "so_that": "je puisse le modifier sans recommencer"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "name": "Analyse par IA",
+      "priority": "high",
+      "description": "Matching CV vs offre d'emploi",
+      "user_stories": [
+        {
+          "id": "US2.1",
+          "as_a": "chercheur d'emploi",
+          "i_want_to": "coller le texte d'une offre d'emploi",
+          "so_that": "l'IA puisse l'analyser"
+        },
+        {
+          "id": "US2.2",
+          "as_a": "utilisateur",
+          "i_want_to": "voir les écarts entre mon CV et l'offre",
+          "so_that": "je sache quoi améliorer"
+        },
+        {
+          "id": "US2.3",
+          "as_a": "utilisateur",
+          "i_want_to": "recevoir des suggestions de reformulation",
+          "so_that": "mon CV soit plus percutant"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "name": "Génération et Export",
+      "priority": "medium",
+      "description": "Export du CV optimisé",
+      "user_stories": [
+        {
+          "id": "US3.1",
+          "as_a": "utilisateur",
+          "i_want_to": "prévisualiser mon CV en temps réel",
+          "so_that": "je vois les changements immédiatement"
+        },
+        {
+          "id": "US3.2",
+          "as_a": "utilisateur",
+          "i_want_to": "exporter mon CV en PDF",
+          "so_that": "je puisse l'envoyer aux recruteurs"
+        }
+      ]
+    }
+  ],
+  "technical_requirements": {
+    "frontend": {
+      "framework": "Next.js / React",
+      "key_libs": ["Tailwind CSS", "React Hook Form", "Zustand"]
+    },
+    "backend": {
+      "runtime": "Node.js (Express) ou Python (FastAPI)",
+      "database": "PostgreSQL (Prisma/Supabase)",
+      "ai_provider": "OpenAI API (GPT-4) ou Claude API"
+    },
+    "integrations": [
+      "API IA pour l'analyse et réécriture",
+      "Génération PDF (Puppeteer / html2pdf)",
+      "Stockage fichiers (AWS S3 / Cloudinary)"
+    ],
+    "security": [
+      "Authentification JWT / OAuth",
+      "Chiffrement des données personnelles (RGPD)",
+      "Validation des entrées utilisateur"
+    ]
+  },
+  "success_metrics": [
+    {
+      "metric": "Nombre de CV générés par mois",
+      "target": "> 1000 le premier trimestre"
+    },
+    {
+      "metric": "Taux de conversion gratuit vers Premium",
+      "target": "> 5%"
+    },
+    {
+      "metric": "Score de matching moyen",
+      "target": "> 85%"
+    }
+  ],
+  "timeline": [
+    {
+      "phase": "Phase 1",
+      "duration": "2 semaines",
+      "deliverables": ["Setup technique", "Authentification", "Import CV"]
+    },
+    {
+      "phase": "Phase 2",
+      "duration": "3 semaines",
+      "deliverables": ["Intégration API IA", "Algorithme de matching"]
+    },
+    {
+      "phase": "Phase 3",
+      "duration": "2 semaines",
+      "deliverables": ["Éditeur de CV", "Prévisualisation en direct"]
+    },
+    {
+      "phase": "Phase 4",
+      "duration": "1 semaine",
+      "deliverables": ["Export PDF", "Tests utilisateurs", "Go-live"]
+    }
+  ]
+}
