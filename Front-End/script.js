@@ -1,6 +1,6 @@
 // script.js
 
-const API_BASE = 'http://localhost:3001/api'; // Assumer backend local
+const API_BASE = 'http://localhost:5050/api'; // Backend sur port 5050
 
 // Gestion de l'authentification
 let token = localStorage.getItem('token');
