@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV JobFit - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CV JobFit</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="login.html">Connexion</a>
+            <a href="register.html">Inscription</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Mes CV</h2>
+        <div id="cv-list"></div>
+        <div class="cv-editor">
+            <h3>Éditeur de CV</h3>
+            <form id="cv-form">
+                <input type="text" id="name" placeholder="Nom" required>
+                <input type="email" id="email-cv" placeholder="Email">
+                <textarea id="experience" placeholder="Expériences"></textarea>
+                <textarea id="skills" placeholder="Compétences"></textarea>
+                <button type="submit">Sauvegarder CV</button>
+            </form>
+            <div class="cv-preview" id="cv-preview"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
