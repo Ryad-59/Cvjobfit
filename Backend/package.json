@@ -1,0 +1,34 @@
+{
+  "name": "cvjobfit",
+  "version": "1.0.0",
+  "description": "Ce projet consiste à créer un site web permettant aux utilisateurs de créer un CV professionnel ou de modifier leur CV actuel avec l’aide de l’intelligence artificielle.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryad-59/Cvjobfit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ryad-59/Cvjobfit/issues"
+  },
+  "homepage": "https://github.com/Ryad-59/Cvjobfit#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
