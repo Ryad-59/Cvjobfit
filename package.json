@@ -1,0 +1,19 @@
+{
+  "name": "cvjobfit",
+  "version": "1.0.0",
+  "description": "Backend IA et export PDF pour Cvjobfit.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "test:ai": "node scripts/test-ai.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.52.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "puppeteer": "^24.1.0"
+  }
+}
